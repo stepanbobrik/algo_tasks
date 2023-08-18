@@ -4,8 +4,7 @@ def sort(arr):
     while r >= 0:
         m = [arr[l], l]
         while l <= r:
-            if arr[l] > m[0]:
-                m = [arr[l], l]
+            m = max(m, [arr[l], l])
             l += 1
         l = 0
         arr[r], arr[m[1]] = arr[m[1]], arr[r]
