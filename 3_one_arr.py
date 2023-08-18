@@ -1,4 +1,6 @@
 def sort(nums):
+    if not nums:
+        return nums
     not_sorted = 1
     while not_sorted:
         not_sorted = 0
