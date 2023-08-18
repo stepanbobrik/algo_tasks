@@ -2,6 +2,8 @@ class ListNode:
     def __init__(self, val):
         self.val = val
         self.next = None
+
+
 def reverse(head):
     prev = None
 
@@ -11,5 +13,3 @@ def reverse(head):
         prev = head
         head = temp
     return prev
-
-
